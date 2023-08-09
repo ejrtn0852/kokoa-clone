@@ -8,7 +8,7 @@
     <title>KoKoaTalk</title>
 </head>
 <body>
-    <div class="login-entire__position">
+    <header class="login-entire__position">
         <div id="login-top-bar">
             <div class="login-top-bar__wifi">
                 <span>서비스 불가</span>
@@ -23,7 +23,7 @@
                 <i class="fa-solid fa-bolt-lightning fa-xs"></i>
         </div>
     </div>    <!-- login-top-bar -->   
-</div>
+</header>
     
     <div id="login-text__position">
         <div class="login-text">
@@ -34,10 +34,14 @@
 
 
 
-<form action="friendScreen.html" id="login-input">
+<form action="friendScreen.html" id="login-input" onsubmit="return false">
+    <i id="login-error" class="fa-solid fa-exclamation" style="color: #ec2222;">
+        <h1>아이디 또는 비밀번호가 틀렸습니다.</h1>
+    </i>
+    <!-- error_modal -->
     <input id="login-id" type="text" placeholder="이메일 또는 핸드폰번호를 입력하세요">
-    <input type="password" placeholder="비밀번호 입력">
-    <input type="submit" value="log in">
+    <input id="login-pw"type="password" placeholder="비밀번호 입력">
+    <input id="login-sub" type="submit" value="log in">
 </form>
 
 <form action="join.html" id="login-input__join" >
@@ -49,10 +53,12 @@
 </div>
 
 
+
+
+<!-- @media -->
 <div id="mobile">
     <span>사이즈가 너무 큽니다!</span>
 </div>
-
 <div id="height-mobile">
     <span>높이 900px ~ 930px 이하로 맞춰주세요!</span>
 </div>
