@@ -14,7 +14,6 @@ const joinUserPw = document.getElementById("user-pw");
 
 let regBool = false;
 
-const newUserInfo = {};
 
 
 
@@ -54,19 +53,12 @@ function infoCheck() {
         regBool = true;
         joinInputForm.onsubmit = "return true";
         return regBool = true;
-        newUserInfo.name = joinUserName.value;
-        newUserInfo.phone = joinUserPhone.value;
-        newUserInfo.email = joinUserEmail.value;
-        newUserInfo.Id = joinUserId.value;
-        newUserInfo.Pw = joinUserPw.value;
     }
-
 }
 
+console.log(123);
 
 
 joinInputForm.addEventListener("submit", infoCheck);
 // joinInputForm.addEventListener("submit", regTest);
 
-
-infoCheck();
