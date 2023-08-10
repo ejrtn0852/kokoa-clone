@@ -18,9 +18,6 @@ let regBool = false;
 
 
 
-
-
-
 // 정규식 검사가 틀리다면 어디가 틀렸는지 placehoder, boder 색으로 알려주고 form의 onsubmit을 false를 유지함
 function infoCheck() {
     if(!regex.name.test(joinUserName.value)){
@@ -55,6 +52,11 @@ function infoCheck() {
         return regBool = true;
     }
 }
+
+
+
+
+
 
 console.log(123);
 
