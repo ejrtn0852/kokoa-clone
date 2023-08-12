@@ -1,13 +1,14 @@
-// const date = new Date();
-// const hours = date.getHours();
-// const min = date.getMinutes();
-// const second = date.getSeconds();
 
-// const setHours = document.querySelector(".login-top-bar__clock > span:nth-child(1)")
-// const setmin = document.querySelector(".login-top-bar__clock > span:nth-child(2)")
+const setHours = document.querySelector(".login-top-bar__clock > span");
 
-// const time = () => {
-//     setHours.innerText = `${date.getSeconds()}`
-// }
+const time = function() {
+    const date = new Date();
+    const hours = date.getHours();
+    if(hours > 12) hours%12;
+    const ampm = hours > 12 ? "PM" : "AM";
+    if(date.getMinutes() < 10) setHours.innerText = `${hours}:0${date.getMinutes()}${ampm}`
+}
 
-// setInterval(time,1000);
+setInterval(time,1000); 
+
+

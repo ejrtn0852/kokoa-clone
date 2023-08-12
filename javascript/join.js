@@ -58,8 +58,6 @@ function infoCheck() {
 
 
 
-console.log(123);
-
 
 joinInputForm.addEventListener("submit", infoCheck);
 // joinInputForm.addEventListener("submit", regTest);
