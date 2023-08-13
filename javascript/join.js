@@ -8,7 +8,7 @@ const joinUserPhone = document.getElementById("user-phone");
 const joinUserEmail = document.getElementById("user-email");
 const joinUserId = document.getElementById("user-id");
 const joinUserPw = document.getElementById("user-pw");
-
+const errorHandle  = document.querySelectorAll("input");
 
 
 

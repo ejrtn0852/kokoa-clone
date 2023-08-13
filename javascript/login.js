@@ -2,7 +2,9 @@ const userID = document.getElementById("login-id");
 const userPW = document.getElementById("login-pw");
 const loginForm = document.getElementById("login-input");
 const loginError = document.getElementById("login-error");
-
+const joinSreen = document.querySelector("#login-input__join > input");
+let joinCnt = false;
+const joinDisplay = document.querySelector(".join-main");
 let userIdCheck = false;
 let userPwCheck = false;
 
@@ -40,10 +42,21 @@ function idError() {
     }
 }
 
+const joinSreenHandler = function () {
+    console.log("함수실행")
+    joinCnt = true;
+    if(joinCnt) {
+        joinDisplay.style.display = "flex";
+    }
+    // todo 백그라운드 오파시티처리 끄고 켜기 등등 미완.;
+}
+
 
 
 
 loginForm.addEventListener('submit',idError);
+joinSreen.addEventListener("click", joinSreenHandler);
+
 
 
 
