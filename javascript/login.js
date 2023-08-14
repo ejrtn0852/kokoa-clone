@@ -8,6 +8,8 @@ const joinDisplay = document.querySelector(".join-main");
 let userIdCheck = false;
 let userPwCheck = false;
 
+
+
 // 몽고같은느낌
 const userObj = {
     id: "ejrtn0852",
