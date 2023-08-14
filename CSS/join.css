@@ -1,7 +1,4 @@
-body {
-    /* background-color:rgba(0, 0, 0, 0.2); */
-}
-/* Todo 화면이 켜지면 뒷배경 오파시티추가함. */
+
 
 .join-main {
     width: 100vw;
@@ -114,4 +111,6 @@ body {
 }
 
 
-
+.join-rgba {
+    background-color: rgba(0, 0, 0, 0.2);
+}

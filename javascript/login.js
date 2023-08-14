@@ -3,12 +3,16 @@ const userPW = document.getElementById("login-pw");
 const loginForm = document.getElementById("login-input");
 const loginError = document.getElementById("login-error");
 const joinSreen = document.querySelector("#login-input__join > input");
-let joinCnt = false;
 const joinDisplay = document.querySelector(".join-main");
+const body = document.querySelector("body");
 let userIdCheck = false;
 let userPwCheck = false;
+let joinCnt = false;
 
-
+const color = {
+    tomato : "tomato",
+    blue : "blue"
+}
 
 // 몽고같은느낌
 const userObj = {
@@ -17,20 +21,20 @@ const userObj = {
 };
 
 // 아이디가 유효하지 않을 시 boder에 빨간 줄 형성 시키는 기능.
-function redline () {
+const redline = () => {
     if (userIdCheck ){
         userID.focus();
         loginError.style.display = "flex";
-        userID.style.borderBottom = "1px solid tomato";
+        userID.style.borderBottom = `1px solid ${color.tomato}`;
     }
     if (userPwCheck) {
         userPW.focus();
         loginError.style.display = "flex";
-        userPW.style.borderBottom = "1px solid tomato";
+        userPW.style.borderBottom = `1px solid ${color.tomato}`;
     }
 }
 
-function idError() {
+const idError = () => {
     if(userID.value !== userObj.id || !userID.value){
         userIdCheck = true;
         redline();
@@ -44,11 +48,12 @@ function idError() {
     }
 }
 
-const joinSreenHandler = function () {
+const joinSrceenHandler = function () {
     console.log("함수실행")
     joinCnt = true;
     if(joinCnt) {
         joinDisplay.style.display = "flex";
+        body.classList.add("join-rgba");
     }
     // todo 백그라운드 오파시티처리 끄고 켜기 등등 미완.;
 }
@@ -57,7 +62,7 @@ const joinSreenHandler = function () {
 
 
 loginForm.addEventListener('submit',idError);
-joinSreen.addEventListener("click", joinSreenHandler);
+joinSreen.addEventListener("click", joinSrceenHandler);
 
 
 
