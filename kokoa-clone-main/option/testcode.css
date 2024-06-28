@@ -1,0 +1,8 @@
+.testsize {
+    /* todo 클래스이름 바꿀것  */
+    /* todo pixed의 지정 위치만큼 밑으로 내리는 용도 */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 80px;
+}

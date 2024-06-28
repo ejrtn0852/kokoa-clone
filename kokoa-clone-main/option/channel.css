@@ -1,0 +1,90 @@
+
+#channel {
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    box-shadow: 0 0 2px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 3px;
+}
+.channel {
+    width: 100%;
+    height: 100%;
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+    z-index: 3;
+}
+
+
+
+
+
+.channel > a:nth-child(2) {
+    position: relative;
+    bottom: 5px;
+}
+
+@keyframes chatingCountAnimation {
+    0% {
+        transform:  none;
+    }50% {
+        transform: translateY(-2px);
+    }100%{
+        transform: none;
+    }
+}
+
+
+.chatingcount {
+    border: 1px solid tomato;
+    background-color: tomato;
+    color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    position: relative;
+    left: 10px;
+    top: 5px;
+    animation: chatingCountAnimation 1s ease-in-out infinite;
+}
+
+
+.channel > a:nth-child(1),
+.channel > a:nth-child(2),
+.channel > a:nth-child(3),
+.channel > a:nth-child(4){
+    transition: 0.1s ease-in-out;
+}
+
+.channel > a:nth-child(1):hover,
+.channel > a:nth-child(2):hover,
+.channel > a:nth-child(3):hover,
+.channel > a:nth-child(4):hover{
+    transform: translateY(-5px) ;
+}
+
+@keyframes firstAni {
+    0%{
+        transform : translateY(80px);
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.first-ani {
+    animation: firstAni 0.5s ease-in-out;
+}
+
+
+
+

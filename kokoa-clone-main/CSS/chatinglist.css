@@ -1,0 +1,54 @@
+.chating-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.chating-profile {
+    width: 55px;
+    height: 55px;
+    background-color: skyblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction:    column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.chating-user__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.chating-user__name > p {
+    color: gray;
+    margin-top: 3px;
+}
+
+.chating-user-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 50px
+}
+
+.chating-user-time > span:last-child {
+    margin-top: 5px;
+    border: 1px solid tomato;
+    border-radius: 50%;
+    background-color: tomato;
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

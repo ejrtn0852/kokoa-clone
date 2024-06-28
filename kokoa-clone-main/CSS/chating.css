@@ -1,0 +1,181 @@
+#color   {
+    background-color: skyblue;
+    height: 300vh;
+}
+
+.chating-info {
+    width: 94%;
+    height: 70px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.chating-info > a,
+.chating-info > div {
+    width: 33%;
+}
+.chating-info > a {
+    display: flex;
+    margin-left: 15px;
+}
+.chating-info > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.chating-info > div:nth-child(3) {
+    display: flex;
+    justify-content: flex-end
+}
+
+.chating-info > div:nth-child(3) > i {
+    margin: 5px;
+}
+
+.timestamp {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.timestamp-color {
+    width: 300px;
+    background-color:#94a4b2;
+    border-radius: 15px;
+}
+.timestamp-color > span {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.in-chating-profile {
+    display: flex;
+    margin-left: 30px;
+}
+.in-chating-profile-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.in-chating-profile__info {
+    margin-left: 15px;
+}
+
+.in-chating-profile__text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.in-chating-profile__text > span:nth-child(1) {
+    width: 180px;
+    height: 30px;
+    word-break:break-all;
+    border-radius: 30px;
+    border-top-left-radius:0px;
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.in-chating-profile__text > span:nth-child(2) {
+    color: gray;
+} 
+
+.in-chating-reply {
+    width: 94%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.in-chating-reply-text  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.in-chating-reply-text > span:nth-child(2) {
+    width: 80px;
+    height: 30px;
+    background-color:  var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+}
+.in-chating-reply-text > span:nth-child(1) {
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 5px;
+    color: gray;
+}
+
+.in-chating > a:nth-child(2) {
+    position: relative;
+    top: 0;
+}
+
+#in-chating__input {
+    width: 100%;
+    background-color:white;
+    position: fixed;
+    bottom: 0;
+    padding: 0 15px;
+}
+.in-chating__input-position {
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+}
+.in-chating__input-add {
+    display: flex;
+    justify-content: flex-end;
+}
+.in-chating__input-text {
+    display: flex;
+}
+
+
+.in-chating__input-text > input {
+    width: 430px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    margin-left: 10px;
+}
+.in-chating__input-submit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    right: 60px;
+}
+
+.in-chating__input-submit > button {
+    background-color: var(--main-color);
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+
+}
+
+

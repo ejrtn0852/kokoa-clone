@@ -1,0 +1,38 @@
+/*#mobile {*/
+/*    position: absolute;*/
+/*    z-index: 99;*/
+/*    height: 120vh;*/
+/*    width: 100vw;*/
+/*    background-color: var(--main-color);*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    font-size: 32px;*/
+/*    top: 0;*/
+/*}*/
+
+/*#height-mobile {*/
+/*    position: absolute;*/
+/*    z-index: 99;*/
+/*    height: 120vh;*/
+/*    width: 100vw;*/
+/*    background-color: var(--main-color);*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    font-size: 32px;*/
+/*    top: 0;*/
+/*}*/
+
+/*@media screen and (max-width:501px){*/
+/*    #mobile {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-height:930px) and (min-height:800px) {*/
+/*    #height-mobile {*/
+/*    display: none;*/
+/*}*/
+/*}*/
+
